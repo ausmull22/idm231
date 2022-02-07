@@ -1,3 +1,36 @@
 body {
-    background-image: url(../images/background.jpg)
+    background-image: url(../images/background.jpg);
+    font-family: "Tisa Sans Pro Regular", sans-serif;
+}
+
+.splashscreen {
+    display: flex;
+}
+
+
+.navigation img {
+    width: 3em;
+}
+
+footer {
+    background-color: #FAF3DD;
+    display: flex;
+}
+
+.form__input {
+    top: 0;
+    left: 0;
+    border: 2px black;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: black;
+    
+}
+
+.submit_button {
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    font-family: "Lato", sans-serif;
 }

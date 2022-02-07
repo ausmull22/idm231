@@ -12,18 +12,22 @@
     <!-- Title of Program and Input Field-->
     <div class = splashscreen>
         <div class = cereal_view>
-            <img src="" alt="">
+            <img src="images/cereal_placeholder.png" alt="placeholder text">
         </div>
         <div class = input_screen>
             <h1>Breakfast Cereal Zodiac Interactive</h1>
-            <input type="text" id="name" required>
-            <input type="date" id="name" required>
-            <input type="submit" value="Enter">
+            <div class="input_form">                
+                <input type="date" id="date" 
+            class="form__input" autocomplete="off">
+                <label for="date"
+            class="form__label">Birth Date</label>
+            </div>
+            <input classs="submit_button" type="submit" value="Enter">
         </div>
     </div>
 
     <!-- Footer-->
-    <div class = footer>
+    <footer>
         <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
 
         <div class = switch>
@@ -46,7 +50,7 @@
             <img src="images/symbols/zodiac/aquarius.png" alt="aquarius">
             <img src="images/symbols/zodiac/pisces.png" alt="pisces">
         </div>
-    </div>
+    </footer>
 
     </script>
 </body>

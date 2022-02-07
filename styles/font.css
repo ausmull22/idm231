@@ -1,0 +1,190 @@
+
+/* Font-Face for Header Font */
+
+@font-face {
+
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lato Regular'), url('../font/Lato/Lato-Regular.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Lato Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Black'), url('../font/Lato/Lato-Black.ttf') format('ttf');
+    }
+        
+    @font-face {
+        font-family: 'Lato Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Black Italic'), url('../font/Lato/Lato-BlackItalic.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Lato Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Bold'), url('../font/Lato/Lato-Bold.ttf') format('ttf');
+    }
+        
+    @font-face {
+        font-family: 'Lato Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Bold Italic'), url('../font/Lato/Lato-BoldItalic.ttf') format('ttf');
+    }
+        
+    @font-face {
+        font-family: 'Lato Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Italic'), url('../font/Lato/Lato-Italic.ttf') format('ttf');
+    }
+        
+    @font-face {
+        font-family: 'Lato Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Light'), url('../font/Lato/Lato-Light.ttf') format('ttf');
+    }
+        
+    @font-face {
+        font-family: 'Lato Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Light Italic'), url('../font/Lato/Lato-LightItalic.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Lato Thin';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Thin'), url('../font/Lato/Lato-Thin.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Lato Thin Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Lato Thin Italic'), url('../font/Lato/Lato-ThinItalic.ttf') format('ttf');
+    }
+
+}
+
+/* Font-Face for Paragraph Font */
+
+
+    @font-face {
+        font-family: 'Tisa Sans Pro Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Regular'), url('../font/Tisa Sans Pro/Tisa Sans Pro Regular.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Extra Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Extra Light'), url('../font/Tisa Sans Pro/Tisa Sans Pro ExtraLight.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Extra Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Extra Light Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro ExtraLight Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Light'), url('../font/Tisa Sans Pro/Tisa Sans Pro Light.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Light Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro Light Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Medium'), url('../font/Tisa Sans Pro/Tisa Sans Pro Medium.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Medium Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro Medium Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Bold'), url('../font/Tisa Sans Pro/Tisa Sans Pro Bold.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Bold Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro Bold Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Extra Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Extra Bold'), url('../font/Tisa Sans Pro/Tisa Sans Pro ExtraBold.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Extra Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Extra Bold Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro ExtraBold Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Black Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Black Italic'), url('../font/Tisa Sans Pro/Tisa Sans Pro Black Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Tisa Sans Pro Black';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Tisa Sans Pro Black'), url('../font/Tisa Sans Pro/Tisa Sans Pro Black.woff') format('woff');
+        }
+    }
