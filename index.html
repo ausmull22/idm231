@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakfast Cereal Zodiac Interactive</title>
+    <script src="scripts/variables.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font.css">
 
 </head>
 <body>
-    
     <!-- Title of Program and Input Field-->
     <div class = splashscreen>
         <div class = cereal_view>
@@ -19,12 +19,12 @@
         <div class = input_screen>
             <h1>Cereal Zodiacs</h1>
             <div class="input_form">                
-                <input type="date" id="date" placeholder="Birth Date"
+                <input type="date" id="input" placeholder="Birth Date"
             class="form__input"  autocomplete="off">
                 <label for="date"
             class="form__label">Birth Date</label>
             </div>
-            <input class="submit_button" type="submit" value="Enter">
+            <input class="submit_button" type="submit" value="Enter" onclick="getdate(input)">
         </div>
     </div>
 

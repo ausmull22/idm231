@@ -25,3 +25,4 @@ Capricorn - December 22 - January 19
 
 const signs =  ['aquarius', 'pisces', 'aries', 'taurus', 'gemini', 'leo', 
 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn']
+
