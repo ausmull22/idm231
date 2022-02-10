@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakfast Cereal Zodiac Interactive</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font.css">
+
 </head>
 <body>
     
@@ -15,14 +17,14 @@
             <img src="images/cereal_placeholder.png" alt="placeholder text">
         </div>
         <div class = input_screen>
-            <h1>Breakfast Cereal Zodiac Interactive</h1>
+            <h1>Cereal Zodiacs</h1>
             <div class="input_form">                
-                <input type="date" id="date" 
-            class="form__input" autocomplete="off">
+                <input type="date" id="date" placeholder="Birth Date"
+            class="form__input"  autocomplete="off">
                 <label for="date"
             class="form__label">Birth Date</label>
             </div>
-            <input classs="submit_button" type="submit" value="Enter">
+            <input class="submit_button" type="submit" value="Enter">
         </div>
     </div>
 
@@ -31,8 +33,10 @@
         <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
 
         <div class = switch>
-            <input type="checkbox">
-            <span class="slider_round"></span>
+            <span class="btn bth-1">
+                <input type="checkbox" name="" id="switch">
+                <label for="switch"></label> 
+            </span>
         </div>
 
         <!-- Navigation to view Zodiacs without having to input birthdate-->

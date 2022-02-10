@@ -1,31 +1,61 @@
+
+
 body {
     background-image: url(../images/background.jpg);
     font-family: "Tisa Sans Pro Regular", sans-serif;
+    height: 500px;
 }
 
-.splashscreen {
-    display: flex;
+h1 {
+    font-family: "Tisa Sans Pro";
+    font-style: italic;
+    font-size: 3rem;
+}
+
+body {
+    font-family: "Lato";
+}
+
+/* Input Screem */
+
+
+.input_screen {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: green;
+}
+
+input#date {
+    font-family: Tisa Sans Pro;
+    font-weight: italic;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem;
 }
 
 
-.navigation img {
-    width: 3em;
-}
-
-footer {
-    background-color: #FAF3DD;
-    display: flex;
-}
-
-.form__input {
-    top: 0;
-    left: 0;
-    border: 2px black;
-    border-radius: 1rem;
-    font-size: 1rem;
+input.submit_button {
+    font-family: Tisa Sans Pro;
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 2rem;
+    border: none;
     color: black;
-    
+    padding: 0rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 3rem 2px;
+    cursor: pointer;
 }
+
+/* Submit Screen */
 
 .submit_button {
     align-items: center;
@@ -34,3 +64,149 @@ footer {
     border-radius: .25rem;
     font-family: "Lato", sans-serif;
 }
+
+.splashscreen {
+    position: relative;
+    display: flex;
+}
+
+.navigation img {
+    width: 3em;
+}
+
+.cereal_view img {
+    z-index: -1;
+    position: relative;
+    bottom: -1rem;
+    margin: 0 100px;
+    max-height: 750px;
+
+}
+
+
+
+footer {
+    position: static;
+    z-index: -1;
+    background-color: #FAF3DD;
+    display: flex;
+    padding: 1em;
+    margin-left: -0.3vw;
+    margin-right: -0.3vw;
+}
+
+footer .navigation {
+    margin-left: auto;
+
+}
+
+footer .switch {
+    margin-right: auto;
+
+}
+
+span.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
+}
+
+.btn {
+    background: white;
+    position: relative;
+    height: 56px;
+}
+
+.btn input {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    appearance: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.btn input:before,
+.btn input:after{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #111;
+}
+
+.btn input:before{
+    content: "ON";
+    left: 40px;
+}
+
+.btn input:after{
+    content: "OFF";
+    right: 40px;
+}
+
+.btn label{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+}
+
+.btn.btn-1 input {
+    transition: 0.2s -0.1s;
+}
+
+.btn.btn-1 input:checked{
+    background: white;
+}
+
+.btn.btn-1 input:checked:before {
+    color: #111;
+    transition: color 0.5s 0.2s;
+}
+
+.btn.btn-1 input:checked:after {
+    color: #111;
+    transition: color 0.5s;
+}
+
+.btn.btn-1 input:checked + label {
+    left: 10px;
+    right: 100px;
+    transition: left 0.5s, right 0.4s 0.2s;
+    background: #2dab21;
+}
+
+.btn-btn-1 input:not(:checked){
+    background: #d2ab21;
+    transition: background 0.5s -0.1s;
+}
+
+.btn-btn-1 input:not(:checked):before{
+    color: #111;
+    transition: color 0.5s;
+}
+
+.btn-btn-1 input:not(:checked):after{
+    color: #1e1e1e;
+    transition: color 0.5s 0.2s;
+}
+
+.btn-btn-1 input:not(:checked) + label{
+    left: 100px;
+    right: 10px;
+    background: #fff;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+}
+
+
+
+
+}
+
