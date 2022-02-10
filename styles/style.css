@@ -25,15 +25,12 @@ body {
     text-align: center;
 }
 
-::-webkit-input-placeholder {
-    color: green;
-}
-
 input#date {
     font-family: Tisa Sans Pro;
     font-weight: italic;
     border-radius: 2rem;
-    border: none;
+    border: black;
+    border-width: thin;
     padding: 1rem;
 }
 
@@ -83,7 +80,12 @@ input.submit_button {
 
 }
 
+.switch img {
+    width: 3em;
 
+    position: relative;
+    max-height: 750px;
+}
 
 footer {
     position: static;
@@ -129,84 +131,5 @@ span.btn {
     appearance: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
-
-.btn input:before,
-.btn input:after{
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #111;
-}
-
-.btn input:before{
-    content: "ON";
-    left: 40px;
-}
-
-.btn input:after{
-    content: "OFF";
-    right: 40px;
-}
-
-.btn label{
-    z-index: 1;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    border-radius: 20px;
-}
-
-.btn.btn-1 input {
-    transition: 0.2s -0.1s;
-}
-
-.btn.btn-1 input:checked{
-    background: white;
-}
-
-.btn.btn-1 input:checked:before {
-    color: #111;
-    transition: color 0.5s 0.2s;
-}
-
-.btn.btn-1 input:checked:after {
-    color: #111;
-    transition: color 0.5s;
-}
-
-.btn.btn-1 input:checked + label {
-    left: 10px;
-    right: 100px;
-    transition: left 0.5s, right 0.4s 0.2s;
-    background: #2dab21;
-}
-
-.btn-btn-1 input:not(:checked){
-    background: #d2ab21;
-    transition: background 0.5s -0.1s;
-}
-
-.btn-btn-1 input:not(:checked):before{
-    color: #111;
-    transition: color 0.5s;
-}
-
-.btn-btn-1 input:not(:checked):after{
-    color: #1e1e1e;
-    transition: color 0.5s 0.2s;
-}
-
-.btn-btn-1 input:not(:checked) + label{
-    left: 100px;
-    right: 10px;
-    background: #fff;
-    transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
-}
-
-
-
-
 }
 
