@@ -12,7 +12,16 @@ const sign_type =  ['aquarius', 'pisces', 'aries', 'taurus', 'gemini', 'leo',
 // Grab date input:
 
 function getdate() {
-    let date = document.getElementById("input").value;
+    let date = new Date(document.getElementById("input").value);
+
+    let birthmonth = date.getMonth() + 1;  // Grabbing User's birth month (Adding +1 because value starts at 0) 
+
+    let day = date.getDate() + 1; // Grabbing User's birth day of the month (Adding +1 because value starts at 0) 
+
     console.log(date)
+    console.log(birthmonth)
+    console.log(day)
+
+
 }
 
