@@ -8,10 +8,25 @@
     <script src="scripts/variables.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/popup.css">
+
 
 </head>
 <body>
+
+    <div class="popup"> 
+        <h2>Cereal Zodiac</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#" onclick="toggle()">Enter</a>
+    </div>
+    
     <!-- Title of Program and Input Field-->
+
+    
     <div class = splashscreen>
         <div class = cereal_view>
             <img src="images/cereal_placeholder.png" alt="placeholder text">
@@ -33,23 +48,23 @@
         <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
 
         <div class = switch>
-            <img src="images/symbols/toggle/1x/cereal_button.png" alt="cereal_button">
+            <img src="images/symbols/toggle/1x/cereal_button.png" alt="cereal_button" onclick="switchbutton()">
         </div>
 
         <!-- Navigation to view Zodiacs without having to input birthdate-->
         <div class = navigation>
-            <img src="images/symbols/zodiac/aries.png" alt="aries">
-            <img src="images/symbols/zodiac/taurus.png" alt="tarus">
-            <img src="images/symbols/zodiac/gemini.png" alt="gemini">
-            <img src="images/symbols/zodiac/cancer.png" alt="cancer">
-            <img src="images/symbols/zodiac/leo.png" alt="leo">
-            <img src="images/symbols/zodiac/virgo.png" alt="virgo">
-            <img src="images/symbols/zodiac/libra.png" alt="libra">
-            <img src="images/symbols/zodiac/scorpio.png" alt="scorpio">
-            <img src="images/symbols/zodiac/sagittarius.png" alt="sagittarius">
-            <img src="images/symbols/zodiac/capricorn.png" alt="capricorn">
-            <img src="images/symbols/zodiac/aquarius.png" alt="aquarius">
-            <img src="images/symbols/zodiac/pisces.png" alt="pisces">
+            <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries">
+            <img src="images/symbols/zodiac/taurus.png" id="tarus" alt="tarus">
+            <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini">
+            <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer">
+            <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo">
+            <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo">
+            <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra">
+            <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio">
+            <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius">
+            <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn">
+            <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius">
+            <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces">
         </div>
     </footer>
 
