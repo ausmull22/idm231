@@ -1,13 +1,36 @@
-.popup {
+#popup {
+    display: inline;
     border-radius: 16px;
     width: 1000px;
     padding: 5rem;
+    border-style: solid;
     background-color: aliceblue;
     position: absolute;
     z-index: 1;
+    animation-name: startup;
+    animation-duration: 0.3s;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
+
+#popup h2 {
+    font-family: Tisa Sans Pro;
+    font-weight: italic;
+}
+
+@keyframes startup {
+    from {
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+    
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }
+  
