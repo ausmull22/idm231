@@ -25,34 +25,3 @@ function getdate() {
 
 }
 
-let image_view = 'zodiac';
-
-
-if (image_view == 'cereal') {
-
-    let image = document.getElementById('aries');
-    image.src = "images/symbols/zodiac/aries.png";
-
-}
-
-if (image_view == 'zodiac') {
-    
-
-    let image = document.getElementById('aries');
-    image.src = "images/symbols/brand/luckycharms.png";
-
-}
-
-function switchbutton() {
-
-    if (image_view == 'zodiac') {
-        let image_view = 'cereal'; //If the Zodiac signs are on screen, switch them to icons of the cereals.
-    }
-
-    if (image_view == 'cereal') {
-        let image_view = 'zodiac'; //If the cereal signs are on screen, switch them to icons of the zodiacs.
-    }
-
-}
-
-

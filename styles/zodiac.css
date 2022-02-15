@@ -9,6 +9,10 @@
     border-style: solid;
     margin: auto;
     z-index: 1;
+    animation-name: animation_2;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .zodiac_description h2 {
@@ -32,6 +36,48 @@
 }
 
 
-.zodiac_description img {
-    width: 10rem;
+
+@keyframes animation_2 {
+    from {
+    
+        transform: translate(0%, 100%);
+    
+    }
+    to {
+        top: 0;
+        transform: translate(0%, 0%);
+    }
+}
+
+
+.image_box {
+width: 128px;
+height: 128px;
+background-color: url(../images/symbols/brand/honeynutcheerios.png);
+transition: 600ms;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center; 
+margin: 0 auto;
+background-size: 7rem;
+
+animation: fade 20s infinite;
+}
+
+@keyframes fade {
+
+    0%{
+        background-image: url(../images/symbols/zodiac/sagittarius.png);
+    }
+
+    50%{
+        background-image: url(../images/symbols/brand/honeynutcheerios.png);
+    }
+
+
+    100%{
+        background-image: url(../images/symbols/zodiac/sagittarius.png);
+    }
+
+
 }
