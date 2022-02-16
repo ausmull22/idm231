@@ -1,6 +1,6 @@
 .zodiac_description {
     background-color: white;
-    display: inline;
+    display: none;
     text-align: center;
     border-radius: 16px;
     width: 480px;
@@ -25,14 +25,11 @@
     top: -1rem;
     font-family: Tisa Sans Pro;
     color: gray;
-    
 }
-
 
 .zodiac_description p {
     text-align: left;
-    font-size: 1.25rem;
-    
+    font-size: 1.25rem;   
 }
 
 
@@ -80,4 +77,24 @@ animation: fade 20s infinite;
     }
 
 
+}
+
+/* Clean up */
+
+
+button {
+    font-family: Tisa Sans Pro;
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 2rem;
+    border: solid;
+    color: black;
+    padding: 0rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 3rem 2px;
+    cursor: pointer;
 }

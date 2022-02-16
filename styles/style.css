@@ -56,7 +56,7 @@ input.submit_button {
     font-weight: bold;
     background-color: white;
     border-radius: 2rem;
-    border: none;
+    border: solid;
     color: black;
     padding: 0rem 3rem;
     text-align: center;

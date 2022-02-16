@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <div id="popup" style="display: none"> 
+    <div id="popup"> 
         <h2>Cereal Zodiac</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -35,7 +35,7 @@
         <div class = cereal_view>
             <img src="images/cereal_placeholder.png" alt="placeholder text">
         </div>
-        <div class = input_screen style="display: none">
+        <div class = input_screen>
             <h1>Cereal Zodiacs</h1>
             <div class="input_form">                
                 <input type="date" id="input" placeholder="Birth Date"
@@ -43,10 +43,12 @@
                 <label for="date"
             class="form__label">Birth Date</label>
             </div>
-            <input class="submit_button" type="submit" value="Enter" onclick="getdate(input)">
+            <input class="submit_button" type="submit" value="Enter" onclick="switch_to_zodiac()">
         </div>
+    
         <div class = zodiac_description>
-            <div class="image_box">
+            <div class="image_box"> <!-- Find out accessibility solution-->
+
             </div>
             <h2>Honey Nut Cheerios</h2>
             <h4>Sagittarius</h4>

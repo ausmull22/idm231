@@ -22,6 +22,13 @@ function getdate() {
     console.log(date)
     console.log(birthmonth)
     console.log(day)
+    
 
 }
 
+function switch_to_zodiac() { // Grabbing User's birth day of the month (Adding +1 because value starts at 0) 
+    document.querySelector(".input_screen").style.display ="none";
+    document.querySelector(".zodiac_description").style.display ="inline";
+
+
+}
