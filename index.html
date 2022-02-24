@@ -7,86 +7,100 @@
     <title>Breakfast Cereal Zodiac Interactive</title>
     <script src="scripts/variables.js"></script>
     <script src="scripts/popup.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/popup.css">
     <link rel="stylesheet" href="styles/zodiac.css">
 
-
-
 </head>
 <body>
 
-    <div id="popup"> 
-        <h2>Cereal Zodiac</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <button onclick="show_hide()">Enter</button>
-    </div>
-    
+ 
     <!-- Title of Program and Input Field-->
 
-    
-    <div class = splashscreen>
-        <div class = cereal_view>
-            <img src="images/cereal_placeholder.png" alt="placeholder text">
-        </div>
-        <div class = input_screen>
-            <h1>Cereal Zodiacs</h1>
-            <div class="input_form">                
-                <input type="date" id="input" placeholder="Birth Date"
-            class="form__input"  autocomplete="off">
-                <label for="date"
-            class="form__label">Birth Date</label>
-            </div>
-            <input class="submit_button" type="submit" value="Enter" onclick="switch_to_zodiac()">
-        </div>
-    
-        <div class = zodiac_description>
-            <div class="image_box"> <!-- Find out accessibility solution-->
+    <div class = "content">
 
-            </div>
-            <h2>Honey Nut Cheerios</h2>
-            <h4>Sagittarius</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Doloribus veniam, quidem sint, soluta architecto ipsum 
-                quasi saepe voluptate nam animi labore cumque reiciendis 
-                quia fuga consequatur illo veritatis, optio ipsam!</p>
-            <button>Start Over</button>
+        <div id="popup"> 
+            <h2>Cereal Zodiac</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button onclick="popup_exit()">Enter</button>
         </div>
-
         
+
+        <div class = splashscreen>
+            <div class = cereal_view>
+                <img src="images/cereal_placeholder.png" alt="placeholder text">
+            </div>
+            <div class = input_screen>
+                <h1>Cereal Zodiacs</h1>
+                <div class="input_form">                
+                    <input type="date" id="input" placeholder="Birth Date"
+                class="form__input"  autocomplete="off">
+                    <label for="date"
+                class="form__label">Birth Date</label>
+                </div>
+
+                <input class="submit_button" type="submit" value="Enter" onclick="zodiac_transition()">
+            </div>
+        
+            <div class = zodiac_description>
+                <div class="image_box"> <!-- Find out accessibility solution-->
+
+                </div>
+                <h2>Honey Nut Cheerios</h2>
+                <h4>Sagittarius</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloribus veniam, quidem sint, soluta architecto ipsum 
+                    quasi saepe voluptate nam animi labore cumque reiciendis 
+                    quia fuga consequatur illo veritatis, optio ipsam!</p>
+                <input class="submit_button" type="submit" value="Enter" onclick="zodiac_exit()">
+
+            </div>
+
+            
+        </div>
+
+        <!-- Footer-->
+        <footer>
+            <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
+
+            <div class = switch>
+                <img src="images/symbols/toggle/1x/cereal_button.png" alt="cereal_button" onclick="switchbutton()">
+            </div>
+
+            <!-- Navigation to view Zodiacs without having to input birthdate-->
+            <div class = navigation>
+                <img src="images/test.svg" id="aries" alt="aries">
+                <img src="images/symbols/zodiac/taurus.png" id="tarus" alt="tarus">
+                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini">
+                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer">
+                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo">
+                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo">
+                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra">
+                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio">
+                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius">
+                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn">
+                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius">
+                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces">
+            </div>
+        </footer>
     </div>
 
-    <!-- Footer-->
-    <footer>
-        <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
-        <div class = switch>
-            <img src="images/symbols/toggle/1x/cereal_button.png" alt="cereal_button" onclick="switchbutton()">
-        </div>
-
-        <!-- Navigation to view Zodiacs without having to input birthdate-->
-        <div class = navigation>
-            <img src="images/test.svg" id="aries" alt="aries">
-            <img src="images/symbols/zodiac/taurus.png" id="tarus" alt="tarus">
-            <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini">
-            <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer">
-            <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo">
-            <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo">
-            <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra">
-            <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio">
-            <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius">
-            <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn">
-            <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius">
-            <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces">
-        </div>
-    </footer>
-
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
+
 </body>
 </html>

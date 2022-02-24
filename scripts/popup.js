@@ -1,5 +1,10 @@
 let popup = 1; // Variable set to open pop-up on start 
 
+function popup_exit() {
+    document.getElementById('popup').style.animationName="exit"; // Activate animation set for pop-up to exit out 
+    setTimeout(show_hide, 1000); // Once animation is complete proceed to close pop-up using show_hide()
+}
+
 
 function show_hide() // function used to close pop-up 
 {
@@ -17,3 +22,4 @@ function show_hide() // function used to close pop-up
         }
     
 }
+
