@@ -1,9 +1,17 @@
 
 
 body {
-    background-image: url(../images/background.jpg);
     font-family: "Tisa Sans Pro Regular", sans-serif;
     height: 500px;
+    background-color: #FAF3DD;
+}
+
+.splashscreen {
+    background-image: url(../images/background.jpg);
+}
+
+.cereal_view {
+    z-index: 0;
 }
 
 h1 {
@@ -18,16 +26,19 @@ body {
 
 /* Input Screem */
 .navigation img {
-    width: 03rem;
-    margin: 0 0.25rem;
+    width: 3rem;
+    margin: 0.5% 0.25rem;
     position: relative;
     filter: drop-shadow(0px 0px 0px #222);
     transition: 0.3s;
+    z-index: 0;
+
 }
 
 .navigation img:hover {
-    width: 4em;
-    filter: drop-shadow(0px 0px 2px #222);
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 1px #222);
+    z-index: 2;
 }
 
 
@@ -64,18 +75,18 @@ input.submit_button {
     display: inline-block;
     font-size: 2rem;
     margin: 3rem 2px;
+    transition: 0.3s;
     cursor: pointer;
 }
 
+input.submit_button:hover {
+    transform: scale(1.2);
+}
+
+
+
 /* Submit Screen */
 
-.submit_button {
-    align-items: center;
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    font-family: "Lato", sans-serif;
-}
 
 .splashscreen {
     position: relative;
@@ -89,7 +100,7 @@ input.submit_button {
 .cereal_view img {
     z-index: -1;
     position: relative;
-    bottom: -1rem;
+    bottom: -0.25rem;
     margin: 0 100px;
     max-height: 750px;
 
@@ -102,9 +113,8 @@ input.submit_button {
 }
 
 footer {
-    position: static;
-    z-index: -1;
-    background-color: #FAF3DD;
+    position: relative;
+    z-index: 1;
     display: flex;
     padding: 1em;
     margin-left: -0.3vw;
@@ -205,5 +215,96 @@ span.btn {
     50% { height: 100%;}
     75% { height: 100%;}
     100% { height: 0%;}
-  }
+}
 
+
+
+/* Switch ADD COMMENTS */
+
+.container { /* Switch ADD COMMENTS */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+input[type=checkbox].toggle{ /* Hide Checkbox */
+    display: none;
+}
+
+input[type=checkbox].toggle + label { /* Toggle Size and Border */
+    display: inline-block;
+    height: 60px;
+    width: 150px;
+    position: relative;
+    font-size: 20px;
+    border: 4px solid black;
+    border-radius: 3rem;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: white;
+
+}
+
+input[type=checkbox].toggle + label:before { 
+    position: absolute;
+    top: 4px;
+    height: 44px;
+    width: 44px;
+    content: '';
+    transition: all 0.3 ease;
+    z-index: 3;
+}
+
+
+input[type=checkbox].toggle + label:after { /* Cereal (Text) */
+    position: absolute;
+    top: 25%;
+    height: 44px;
+    width: 44px;
+    content: '';
+    transition: all 0.3 ease;
+    z-index: 3;
+
+}
+
+
+
+input[type=checkbox].toggle:not(:checked) + label:after{ 
+    content: attr(data-unchecked);
+    right: 2rem;
+    left: auto;
+    opacity: 1;
+    color: black;
+
+}
+
+input[type=checkbox].toggle:not(:checked) + label:before{
+    left: 4px;
+    background-color: black;
+    border-radius: 3rem;
+}
+
+
+input[type=checkbox].toggle:checked + label{ /* Change Color Outline to Yellow */
+    text-align: left;
+    border-color: black;
+    border-radius: 3rem;
+}
+
+input[type=checkbox].toggle:checked + label:after{ /* Zodiac Text */
+    content: attr(data-checked);
+    left: 1rem;
+    right: auto;
+    color: black;
+    
+}
+
+input[type=checkbox].toggle:checked + label:before{ /* Toggle Circle Positioned to Right */
+    left: 96px;
+    background-color: black;
+    border-radius: 3rem;
+}

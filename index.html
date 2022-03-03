@@ -53,12 +53,14 @@
                 <div class="image_box"> <!-- Find out accessibility solution-->
 
                 </div>
-                <h2>Honey Nut Cheerios</h2>
-                <h4>Sagittarius</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <h2 id="js-cereal-title">Honey Nut Cheerios</h2>
+                <h4 id="js-zodiac-title">Sagittarius</h4>
+                <p id="js-written-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Doloribus veniam, quidem sint, soluta architecto ipsum 
                     quasi saepe voluptate nam animi labore cumque reiciendis 
-                    quia fuga consequatur illo veritatis, optio ipsam!</p>
+                    quia fuga consequatur illo veritatis, optio ipsam!
+                </p>
                 <input class="submit_button" type="submit" value="Enter" onclick="zodiac_exit()">
 
             </div>
@@ -71,20 +73,25 @@
             <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
 
             <div class = switch>
-                <img src="images/symbols/toggle/1x/cereal_button.png" alt="cereal_button" onclick="switchbutton()">
+                <div onclick="image_switch()">
+                    <input type="checkbox" class="toggle" id="default">
+                    <label for="default" data-checked="Zodiac" data-unchecked="Cereal">
+                    </label>
+                </div>
+
             </div>
 
             <!-- Navigation to view Zodiacs without having to input birthdate-->
             <div class = navigation>
-                <img src="images/test.svg" id="aries" alt="aries">
-                <img src="images/symbols/zodiac/taurus.png" id="tarus" alt="tarus">
+                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries">
+                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus">
                 <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini">
                 <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer">
                 <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo">
                 <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo">
                 <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra">
                 <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio">
-                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius">
+                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus()">
                 <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn">
                 <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius">
                 <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces">
