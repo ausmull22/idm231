@@ -1,0 +1,30 @@
+
+.splashscreen { /* SplashScreen */
+
+    display: flex;
+    height: 720px;
+}
+
+.cereal_view { /* Flexbox of Cereal Selected */
+    width: 50%;
+}
+
+.cereal_view img { /* Image of Cereal Selected */
+    position: relative;
+    max-width: 800px;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -45%; /* half width of img */
+    padding-bottom: 4rem;
+}
+
+.input_screen { /* Flexbox of Input Screen */
+    flex: 1;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+
+}
+
+/* Input Screen */

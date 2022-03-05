@@ -82,3 +82,46 @@ console.log(person.email);
 let sign = "URBN Center"
 
 use single quotes and const
+
+
+
+function check_season() {
+
+    // Check Winter Season // view if birthmonth is equal to 12 (Decemebr) or less than or equal to 3 (March)
+
+    if (birthmonth == 12) or (birthmonth >= 3) {
+
+        if (day >= 21) {
+            let selected_season = season[3];
+            console.log(season)
+        }
+
+    } else if (birthmonth >= 3 && birthmonth >= 6) { // Check Spring Month (March)
+
+        if (day >= 20) {
+            let selected_season = season[0];
+            console.log(season)
+        }
+
+    } else if (birthmonth >= 6 && birthmonth <= 9) { // Check Summer Month (June)
+
+        if (day >= 21) {
+            let selected_season = season[1];
+            console.log(season)
+        }
+
+    } else if (birthmonth >=9 && birthmonth <= 12) { // Check Summer Month (June)
+
+        if (day >= 21) {
+            let selected_season = season[2];
+            console.log(season)
+        }
+    }
+
+}
+
+
+// Spring range is from March 22 - June 21
+// Summer range is June 22 - September 21
+// Fall range is September 22 - December 21
+// Winter range is December 22 - March 21

@@ -1,4 +1,5 @@
-#popup {
+#popup { /* PopUp Style */
+
     display: inline;
     border-radius: 16px;
     width: 1000px;
@@ -14,12 +15,9 @@
     animation-fill-mode: forwards;
 }
 
-#popup h2 {
-    font-family: Tisa Sans Pro;
-    font-weight: italic;
-}
 
-@keyframes startup {
+@keyframes startup { /* Animation of PopUp moving upward */
+
     from {
     
         top: 50%;
@@ -35,7 +33,8 @@
 }
   
 
-@keyframes exit {
+@keyframes exit { /* Animation of PopUp moving downward */
+
     
     from {
         top: 50%;

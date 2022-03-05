@@ -1,0 +1,281 @@
+
+/* Style for Zodiac Description */
+
+
+.zodiac_description { /* Style for Zodiac Description Window*/
+    background-color: white;
+    display: none;
+    text-align: center;
+    border-radius: 16px;
+    width: 480px;
+    height: 520px;
+    padding: 5rem;
+    border-style: solid;
+    flex: 1;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 1;
+    animation-name: slide_up;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.zodiac_description h2 { /* Style for Zodiac Description Heading */
+    font-style: italic;
+}
+
+.zodiac_description h4 { /* Style for Zodiac Description Subheading */
+    position: relative;
+    top: -1rem;
+    color: gray;
+}
+
+.zodiac_description p { /* Style for Zodiac Description Paragraph text */
+    text-align: left;
+    font-size: 1.25rem;   
+}
+
+#image_box { /* Style for Image Box */
+    max-width: 120px;
+    margin: 0 auto;
+    animation: aries 5s linear infinite;
+}
+
+#image_box img {
+    width: 100%;
+    opacity: 0;
+}
+
+
+
+.button { /* Button */
+    font-family: 'Patrick Hand';
+    background-color: white;
+    border-radius: 2rem;
+    border: solid;
+    color: black;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 3rem 2px;
+    cursor: pointer;
+}
+
+
+
+/*........................................................................................................................................
+//...........................................................................................................OOO..........................
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII......OOOOOOOOO......ONNNN.....NNNNN..
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII....OOOOOOOOOOOOO....ONNNNN....NNNNN..
+//......AAAAAAA......NNNNNNN....NNNN..IIIII..MMMMMMM....MMMMMMM......AAAAAAA...AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNN....NNNNN..
+//......AAAAAAAA.....NNNNNNN....NNNN..IIIII..MMMMMMMM...MMMMMMM......AAAAAAAA..AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNNN...NNNNN..
+//.....AAAAAAAAA.....NNNNNNNN...NNNN..IIIII..MMMMMMMM...MMMMMMM.....AAAAAAAAA.......TTTTT......TTIII..IOOOOOO...OOOOOOO..ONNNNNN...NNNNN..
+//.....AAAAAAAAAA....NNNNNNNN...NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOOO.....OOOOOO..ONNNNNNN..NNNNN..
+//.....AAAAAAAAAA....NNNNNNNNN..NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNN..NNNNN..
+//....AAAAAAAAAAA....NNNNNNNNNN.NNNN..IIIII..MMMMMMMM..MMMMMMMM....AAAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNN.NNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNN.NNNN..IIIII..MMMMMMMMM.MMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNNNNNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII.IIOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAA..AAAAA...NNNNN.NNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAA..AAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO.......OOOOO..ONNN..NNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO......OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAA..NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMMMMMMMM..AAAAAAAAAAAAAAA....TTTTT......TTIII..IOOOOO.....OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAAA.NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAAAAAAAAAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//..AAAAA.....AAAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAA.....AAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//.AAAAAA......AAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAAA......AAAAA...TTTTT......TTIII....OOOOOOOOOOOOO....ONNN.....NNNNNN..
+//.AAAAA.......AAAAAANNNNN.....NNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAA.......AAAAAA..TTTTT......TTIII.....OOOOOOOOOOO.....ONNN.....NNNNNN..
+//.........................................................................................................OOOOOOO........................
+//........................................................................................................................................*/
+
+@keyframes slide_up { /* Keyframe Animation for Zodiac Description to slide up */
+    from {
+    
+        transform: translate(0%, 100%);
+    
+    }
+    to {
+        top: 0;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes slide_down { /* Keyframe Animation for Zodiac Description back down */
+
+    from {
+        top: 0;
+        transform: translate(0%, 0%); 
+    }
+
+    to {
+    
+        transform: translate(0%, 100%); /* Reaches final position */
+    
+    }
+    
+}
+
+/* Fade Out Animation */
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/*//............................................................................................................................
+//....SSSSSS....LLL........III..DDDDDD.......EEEEEEEEEE....SSSSSS....HHH.....HHH.....OOOOOO....OWW....WWW....WWW...SSSSSS.....
+//..SSSSSSSSS...LLLL.......III..DDDDDDDDD....EEEEEEEEEEE.SSSSSSSSS...HHHH...HHHH...OOOOOOOOOO..OWWW..WWWWW..WWWW.SSSSSSSSS....
+//..SSSSSSSSSS..LLLL.......III..DDDDDDDDDDD..EEEEEEEEEEE.SSSSSSSSSS..HHHH...HHHH...OOOOOOOOOOO.OWWW..WWWWW..WWWW.SSSSSSSSSS...
+//.SSSSSSSSSSS..LLLL.......III..DDDDDDDDDDD..EEEEEEEEEEEESSSSSSSSSS..HHHH...HHHH..OOOOOOOOOOOO.OWWW..WWWWW..WWWWWSSSSSSSSSS...
+//.SSSS...SSSSS.LLLL.......III..DDDD...DDDDD.EEEE.......ESSS...SSSSS.HHHH...HHHH..OOOO....OOOOOOWWWW.WWWWW.WWWWWWSSS...SSSSS..
+//.SSSSSS..SSS..LLLL.......III..DDDD....DDDD.EEEEEEEEEE.ESSSSS..SSS..HHHHHHHHHHH.HOOOO....OOOOO.WWWWWWWWWWWWWWW.WSSSSS..SSS...
+//..SSSSSSSSS...LLLL.......III..DDDD....DDDD.EEEEEEEEEE..SSSSSSSSS...HHHHHHHHHHH.HOOO......OOOO.WWWWWWWWWWWWWWW..SSSSSSSSS....
+//..SSSSSSSSSS..LLLL.......III..DDDD....DDDD.EEEEEEEEEE..SSSSSSSSSS..HHHHHHHHHHH.HOOO......OOOO.WWWWWWWWWWWWWWW..SSSSSSSSSS...
+//....SSSSSSSSS.LLLL.......III..DDDD....DDDD.EEEEEEEEEE....SSSSSSSSS.HHHHHHHHHHH.HOOO......OOOO..WWWWWW.WWWWWW.....SSSSSSSSS..
+//.SSSS..SSSSSS.LLLL.......III..DDDD...DDDDD.EEEE.......ESSS..SSSSSS.HHHH...HHHH.HOOOO....OOOOO..WWWWWW.WWWWWW..WSSS..SSSSSS..
+//.SSSS....SSSS.LLLL.......III..DDDD...DDDDD.EEEE.......ESSS....SSSS.HHHH...HHHH..OOOOO...OOOOO..WWWWWW.WWWWWW..WSSS....SSSS..
+//.SSSSSSSSSSSS.LLLLLLLLLL.III..DDDDDDDDDDD..EEEEEEEEEEEESSSSSSSSSSS.HHHH...HHHH..OOOOOOOOOOOO...WWWWWW.WWWWWW..WSSSSSSSSSSS..
+//..SSSSSSSSSS..LLLLLLLLLL.III..DDDDDDDDDD...EEEEEEEEEEE.SSSSSSSSSS..HHHH...HHHH...OOOOOOOOOO.....WWWW..WWWWW....SSSSSSSSSS...
+//..SSSSSSSSSS..LLLLLLLLLL.III..DDDDDDDDD....EEEEEEEEEEE.SSSSSSSSSS..HHHH...HHHH....OOOOOOOOO.....WWWW...WWWW....SSSSSSSSSS...
+//....SSSSSS...............................................SSSSSS....................OOOOOO........................SSSSSS.....
+//............................................................................................................................*/
+
+
+@keyframes aries { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/luckycharms.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/aries.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/luckycharms.png); background-size: cover;}
+    
+}
+
+@keyframes taurus { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/trix.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/taurus.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/trix.png); background-size: cover;}
+    
+}
+
+@keyframes gemini { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/raisinbran.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/gemini.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/raisinbran.png); background-size: cover;}
+    
+}
+
+@keyframes cancer { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/frostedflake.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/cancer.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/frostedflake.png); background-size: cover;}
+    
+}
+
+@keyframes leo { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/life.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/leo.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/life.png); background-size: cover;}
+    
+}
+
+@keyframes virgo { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/alphabits.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/virgo.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/alphabits.png); background-size: cover;}
+    
+}
+
+@keyframes libra { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/applejacks.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/libra.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/applejacks.png); background-size: cover;}
+    
+}
+
+@keyframes scorpio { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/cornflakes.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/scorpio.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/cornflakes.png); background-size: cover;}
+    
+}
+
+@keyframes sagittarius { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/honeynutcheerios.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/sagittarius.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/honeynutcheerios.png); background-size: cover;}
+    
+}
+
+@keyframes capricorn { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/goldengrahams.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/capricorn.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/goldengrahams.png); background-size: cover;}
+    
+}
+
+@keyframes aquarius { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/wheaties.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/aquarius.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/wheaties.png); background-size: cover;}
+    
+}
+
+@keyframes pisces { /* Keyframes to switch between Cereal Brands and Zodiacs*/
+
+    0% {background: url(../images/symbols/brand/reeses.png); background-size: cover;}
+
+    50% {background: url(../images/symbols/zodiac/pisces.png); background-size: cover;}
+
+    100% {background: url(../images/symbols/brand/reeses.png); background-size: cover;}
+    
+}

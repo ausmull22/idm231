@@ -1,6 +1,10 @@
 
 /* Font-Face for Header Font */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap');
+
 @font-face {
 
     font-family: 'Lato Regular';

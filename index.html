@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/popup.css">
-    <link rel="stylesheet" href="styles/zodiac.css">
+    <link rel="stylesheet" href="styles/zodiac_description.css">
+    <link rel="stylesheet" href="styles/splashscreen.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
 
 </head>
 <body>
@@ -29,39 +32,54 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <button onclick="popup_exit()">Enter</button>
+            <input class="button" type="submit" value="Enter" onclick="popup_exit()">
         </div>
         
 
         <div class = splashscreen>
+
             <div class = cereal_view>
-                <img src="images/cereal_placeholder.png" alt="placeholder text">
+                <img id = "js-cereal-view" src="images/cereal_viewer/cereal_placeholder.png" alt="placeholder text">
             </div>
+
             <div class = input_screen>
                 <h1>Cereal Zodiacs</h1>
                 <div class="input_form">                
                     <input type="date" id="input" placeholder="Birth Date"
-                class="form__input"  autocomplete="off">
+                class="form__input" autocomplete="off">
                     <label for="date"
                 class="form__label">Birth Date</label>
                 </div>
 
-                <input class="submit_button" type="submit" value="Enter" onclick="zodiac_transition()">
+                <input class="button" type="submit" value="Enter" onclick="zodiac_transition()">
             </div>
         
             <div class = zodiac_description>
-                <div class="image_box"> <!-- Find out accessibility solution-->
+                <div class ="zodiac_wrapper">
+
+                    <div class="image_wrapper">
+                        <div id="image_box">
+                            <img id="js-slideshow" src="images/symbols/brand/honeynutcheerios.png" alt="">
+                        </div>
+                    </div>
+
+                    <h2 id="js-cereal-title">Honey Nut Cheerios</h2>
+
+                    <h4 id="js-zodiac-title">Sagittarius</h4>
+                    
+                    <p id="js-written-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus veniam, quidem sint, soluta architecto ipsum 
+                        quasi saepe voluptate nam animi labore cumque reiciendis 
+                        quia fuga consequatur illo veritatis, optio ipsam!
+                    </p>
+
+                    <input class="button" type="submit" value="Return" onclick="zodiac_exit()">
+
 
                 </div>
-                <h2 id="js-cereal-title">Honey Nut Cheerios</h2>
-                <h4 id="js-zodiac-title">Sagittarius</h4>
-                <p id="js-written-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Doloribus veniam, quidem sint, soluta architecto ipsum 
-                    quasi saepe voluptate nam animi labore cumque reiciendis 
-                    quia fuga consequatur illo veritatis, optio ipsam!
-                </p>
-                <input class="submit_button" type="submit" value="Enter" onclick="zodiac_exit()">
+                
+
 
             </div>
 
@@ -83,18 +101,18 @@
 
             <!-- Navigation to view Zodiacs without having to input birthdate-->
             <div class = navigation>
-                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries">
-                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus">
-                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini">
-                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer">
-                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo">
-                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo">
-                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra">
-                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio">
+                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries" onclick="zodiac_aries()">
+                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus" onclick="zodiac_taurus()">
+                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini" onclick="zodiac_gemini()">
+                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer" onclick="zodiac_cancer()">
+                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo" onclick="zodiac_leo()">
+                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo" onclick="zodiac_virgo()">
+                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra" onclick="zodiac_libra()">
+                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio" onclick="zodiac_scorpio()">
                 <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus()">
-                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn">
-                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius">
-                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces">
+                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn" onclick="zodiac_capricorn()">
+                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius" onclick="zodiac_aquarius()">
+                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces" onclick="zodiac_pisces()">
             </div>
         </footer>
     </div>
