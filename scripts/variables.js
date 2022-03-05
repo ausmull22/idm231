@@ -122,6 +122,7 @@ function zodiac_aries() { // Switch to Aries
     document.getElementById("js-zodiac-title").innerHTML = "Aries";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="aries 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/luckycharms.png"; 
 
 }
 
@@ -131,6 +132,7 @@ function zodiac_taurus() { // Switch to Taurus
     document.getElementById("js-zodiac-title").innerHTML = "Taurus";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="taurus 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/trix.png"; 
 
 }
 
@@ -141,6 +143,7 @@ function zodiac_gemini() { // Switch to Gemini
     document.getElementById("js-zodiac-title").innerHTML = "Gemini";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="gemini 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/raisinbran.png"; 
 
 }
 
@@ -151,6 +154,7 @@ function zodiac_cancer() { // Switch to Cancer
     document.getElementById("js-zodiac-title").innerHTML = "Cancer";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="cancer 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/frostedflakes.png"; 
 
 }
 
@@ -161,6 +165,7 @@ function zodiac_leo() { // Switch to Leo
     document.getElementById("js-zodiac-title").innerHTML = "Leo";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="leo 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/life.png"; 
 
     
 }
@@ -183,6 +188,8 @@ function zodiac_libra() { // Switch to Libra
     document.getElementById("js-zodiac-title").innerHTML = "Saggitarus";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="libra 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/honeynutcheerios.png"; 
+
 }
 
 
@@ -192,6 +199,8 @@ function zodiac_scorpio() { // Switch to Scorpio
     document.getElementById("js-zodiac-title").innerHTML = "Scorpio";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="scorpio 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/cornflakes.png"; 
+
 }
 
 
@@ -201,6 +210,8 @@ function zodiac_saggitarus() { // Switch to Saggitarus
     document.getElementById("js-zodiac-title").innerHTML = "Saggitarus";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="sagittarius 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/honeynutcheerios.png"; 
+
 }
 
 
@@ -210,6 +221,8 @@ function zodiac_capricorn() { // Switch to Capricorn
     document.getElementById("js-zodiac-title").innerHTML = "Capricorn";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="capricorn 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/goldengrahams.png"; 
+
 }
 
 
@@ -219,6 +232,8 @@ function zodiac_aquarius() { // Switch to Aquarius
     document.getElementById("js-zodiac-title").innerHTML = "Aquarius";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="aquarius 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/wheaties.png"; 
+
 }
 
 
@@ -228,6 +243,9 @@ function zodiac_pisces() { // Switch to Pisces
     document.getElementById("js-zodiac-title").innerHTML = "Pisces";
     document.getElementById("js-written-description").innerHTML = "ADD TEXT HERE";
     document.getElementById("image_box").style.animation ="pisces 5s linear infinite";
+    document.getElementById("js-cereal-view").src = "images/cereal_viewer/reesespuffs.png"; 
+
+
 }
 
 
