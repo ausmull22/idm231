@@ -39,7 +39,7 @@
         <div class = splashscreen>
 
             <div class = cereal_view>
-                <img id = "js-cereal-view" src="images/cereal_viewer/cereal_placeholder.png" alt="placeholder text">
+                <img id = "js-cereal-view" src="images/cereal_viewer/default.png" alt="placeholder text">
             </div>
 
             <div class = input_screen>
@@ -51,7 +51,7 @@
                 class="form__label">Birth Date</label>
                 </div>
 
-                <input class="button" type="submit" value="Enter" onclick="zodiac_transition()">
+                <input class="button" type="submit" value="Enter" onclick="enter()">
             </div>
         
             <div class = zodiac_description>
@@ -101,18 +101,18 @@
 
             <!-- Navigation to view Zodiacs without having to input birthdate-->
             <div class = navigation>
-                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries" onclick="zodiac_aries()">
-                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus" onclick="zodiac_taurus()">
-                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini" onclick="zodiac_gemini()">
-                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer" onclick="zodiac_cancer()">
-                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo" onclick="zodiac_leo()">
-                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo" onclick="zodiac_virgo()">
-                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra" onclick="zodiac_libra()">
-                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio" onclick="zodiac_scorpio()">
-                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus()">
-                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn" onclick="zodiac_capricorn()">
-                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius" onclick="zodiac_aquarius()">
-                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces" onclick="zodiac_pisces()">
+                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries" onclick="zodiac_aries();">
+                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus" onclick="zodiac_taurus();zodiac_transition();">
+                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini" onclick="zodiac_gemini();zodiac_transition();">
+                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer" onclick="zodiac_cancer();zodiac_transition();">
+                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo" onclick="zodiac_leo();zodiac_transition();">
+                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo" onclick="zodiac_virgo();zodiac_transition();">
+                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra" onclick="zodiac_libra();zodiac_transition();">
+                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio" onclick="zodiac_scorpio();zodiac_transition();">
+                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus();zodiac_transition();">
+                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn" onclick="zodiac_capricorn();zodiac_transition();">
+                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius" onclick="zodiac_aquarius();zodiac_transition()">
+                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces" onclick="zodiac_pisces();zodiac_transition();">
             </div>
         </footer>
     </div>
