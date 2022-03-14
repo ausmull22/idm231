@@ -5,6 +5,13 @@ function popup_exit() {
     setTimeout(show_hide, 1000); // Once animation is complete proceed to close pop-up using show_hide()
 }
 
+function popup_activate() {
+
+    document.getElementById('popup').style.display="inline";
+    document.getElementById('popup').style.animationName="startup";
+    popup = 1;
+
+}
 
 function show_hide() // function used to close pop-up 
 {
