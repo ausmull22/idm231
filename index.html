@@ -26,11 +26,9 @@
     <div class = "content">
 
         <div id="popup"> 
-            <h2>Cereal Zodiac</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h1>Cereal Zodiac</h1>
+            <p>
+                Enter your birthday in the input box, and click enter. After clicking the enter button, you will be given a cereal brand based on your zodiac. You can also select zodiacs at the bottom right of the screen.
             </p>
             <input class="button" type="submit" value="Enter" onclick="popup_exit()">
         </div>
@@ -45,11 +43,13 @@
             <div class = input_screen>
                 <h1>Cereal Zodiacs</h1>
                 <div class="input_form">                
-                    <input type="date" id="input" placeholder="Birth Date"
-                class="form__input" autocomplete="off">
                     <label for="date"
-                class="form__label">Birth Date</label>
+                    class="form__label">Birth Date</label>
+                    <input type="date" id="input" placeholder="Birth Date"
+                    class="form__input" autocomplete="off">
                 </div>
+                    
+
 
                 <input class="button" type="submit" value="Enter" onclick="enter()">
             </div>
@@ -68,17 +68,14 @@
                     <h4 id="js-zodiac-title">Sagittarius</h4>
                     
                     <p id="js-written-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Doloribus veniam, quidem sint, soluta architecto ipsum 
-                        quasi saepe voluptate nam animi labore cumque reiciendis 
-                        quia fuga consequatur illo veritatis, optio ipsam!
                     </p>
 
-                    <input class="button" type="submit" value="Return" onclick="zodiac_exit()">
 
 
                 </div>
                 
+                <input class="button" id="up" type="submit" value="Return" onclick="zodiac_exit()">
+
 
 
             </div>

@@ -1,19 +1,19 @@
 
 
-body {
-    font-family: 'Patrick Hand', cursive;
-    height: 500px;
-    background-color: #FAF3DD;
+body { /* Body Styles */
+  font-family: 'Patrick Hand', cursive; 
+  height: 500px;
+  background-color: #FAF3DD;
 }
 
-.splashscreen {
-    background-image: url(../images/background.jpg);
+.splashscreen { /* Background for Splash Screen */
+  background-image: url(../images/background.jpg);
 }
 
 
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 3rem;
+h1 { /* Heading 1 */
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
 }
 
 
@@ -25,7 +25,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #242f3f;
+  background-color: white;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -36,9 +36,10 @@ h1 {
   width: 30px;
   height: 30px;
   position: relative;
-  border: 4px solid #Fff;
+  border: 4px solid black;
   animation: loader 2s infinite ease;
 }
+
 .loader-inner {
   vertical-align: top;
   display: inline-block;
@@ -46,6 +47,30 @@ h1 {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
+
+/*........................................................................................................................................
+//...........................................................................................................OOO..........................
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII......OOOOOOOOO......ONNNN.....NNNNN..
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII....OOOOOOOOOOOOO....ONNNNN....NNNNN..
+//......AAAAAAA......NNNNNNN....NNNN..IIIII..MMMMMMM....MMMMMMM......AAAAAAA...AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNN....NNNNN..
+//......AAAAAAAA.....NNNNNNN....NNNN..IIIII..MMMMMMMM...MMMMMMM......AAAAAAAA..AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNNN...NNNNN..
+//.....AAAAAAAAA.....NNNNNNNN...NNNN..IIIII..MMMMMMMM...MMMMMMM.....AAAAAAAAA.......TTTTT......TTIII..IOOOOOO...OOOOOOO..ONNNNNN...NNNNN..
+//.....AAAAAAAAAA....NNNNNNNN...NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOOO.....OOOOOO..ONNNNNNN..NNNNN..
+//.....AAAAAAAAAA....NNNNNNNNN..NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNN..NNNNN..
+//....AAAAAAAAAAA....NNNNNNNNNN.NNNN..IIIII..MMMMMMMM..MMMMMMMM....AAAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNN.NNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNN.NNNN..IIIII..MMMMMMMMM.MMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNNNNNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII.IIOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAA..AAAAA...NNNNN.NNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAA..AAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO.......OOOOO..ONNN..NNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO......OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAA..NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMMMMMMMM..AAAAAAAAAAAAAAA....TTTTT......TTIII..IOOOOO.....OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAAA.NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAAAAAAAAAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//..AAAAA.....AAAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAA.....AAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//.AAAAAA......AAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAAA......AAAAA...TTTTT......TTIII....OOOOOOOOOOOOO....ONNN.....NNNNNN..
+//.AAAAA.......AAAAAANNNNN.....NNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAA.......AAAAAA..TTTTT......TTIII.....OOOOOOOOOOO.....ONNN.....NNNNNN..
+//.........................................................................................................OOOOOOO........................
+//........................................................................................................................................*/
+
 
 @keyframes loader {
   0% { transform: rotate(0deg);}

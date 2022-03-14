@@ -56,21 +56,28 @@ function reset_animation() { // Resets Animation
 // Image Switch to cereal
 
 function image_switch() {
+    image_tracker = "zodiac";
+    
+    if (image_tracker == "zodiac") {
+        image_tracker = "brand";
+    } else if (image_tracker == "brand") {
+        image_tracker = "zodiac";
+    }
 
     if (image_tracker == "zodiac") {
 
-        document.getElementById("aries").src = "images/symbols/brand/aries.png"; 
-        document.getElementById("taurus").src = "images/symbols/brand/taurus.png"; 
-        document.getElementById("gemini").src = "images/symbols/brand/gemini.png"; 
-        document.getElementById("cancer").src = "images/symbols/brand/cancer.png"; 
-        document.getElementById("leo").src = "images/symbols/brand/leo.png"; 
-        document.getElementById("virgo").src = "images/symbols/brand/virgo.png"; 
-        document.getElementById("libra").src = "images/symbols/brand/libra.png"; 
-        document.getElementById("scorpio").src = "images/symbols/brand/scorpio.png"; 
-        document.getElementById("sagittarius").src = "images/symbols/brand/sagittarius.png"; 
-        document.getElementById("capricorn").src = "images/symbols/brand/capricorn.png"; 
-        document.getElementById("aquarius").src = "images/symbols/brand/aquarius.png"; 
-        document.getElementById("pisces").src = "images/symbols/brand/pisces.png"; 
+        document.getElementById("aries").src = "images/symbols/zodiac/aries.png"; 
+        document.getElementById("taurus").src = "images/symbols/zodiac/taurus.png"; 
+        document.getElementById("gemini").src = "images/symbols/zodiac/gemini.png"; 
+        document.getElementById("cancer").src = "images/symbols/zodiac/cancer.png"; 
+        document.getElementById("leo").src = "images/symbols/zodiac/leo.png"; 
+        document.getElementById("virgo").src = "images/symbols/zodiac/virgo.png"; 
+        document.getElementById("libra").src = "images/symbols/zodiac/libra.png"; 
+        document.getElementById("scorpio").src = "images/symbols/zodiac/scorpio.png"; 
+        document.getElementById("sagittarius").src = "images/symbols/zodiac/sagittarius.png"; 
+        document.getElementById("capricorn").src = "images/symbols/zodiac/capricorn.png"; 
+        document.getElementById("aquarius").src = "images/symbols/zodiac/aquarius.png"; 
+        document.getElementById("pisces").src = "images/symbols/zodiac/pisces.png"; 
     
     } 
     
@@ -90,8 +97,6 @@ function image_switch() {
     }
 
 }
-
-
 
 // Zodiac Switches
 
@@ -160,7 +165,7 @@ function zodiac_leo() { // Switch to Leo
     document.getElementById("image_box").style.animation ="leo 5s linear infinite"; // "Image_box" style is modified to show Leo/Life Icons
     document.getElementById("js-cereal-view").src = "images/cereal_viewer/life.png"; // Cereal View Changes to Life
 
-    selected_audio = new Audio('sounds/frosted_flakes.mp3'); // Change Audio Source to sound made for Life
+    selected_audio = new Audio('sounds/life.mp3'); // Change Audio Source to sound made for Life
     selected_audio.play();
 
     

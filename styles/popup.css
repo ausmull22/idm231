@@ -15,6 +15,32 @@
     animation-fill-mode: forwards;
 }
 
+#popup p { /* PopUp Paragraph */
+    font-size: 2rem;
+}
+
+/*........................................................................................................................................
+//...........................................................................................................OOO..........................
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII......OOOOOOOOO......ONNNN.....NNNNN..
+//.......AAAAAA......NNNNNN.....NNNN..IIIII..MMMMMMM....MMMMMMM.......AAAAAA...AAATTTTTTTTTTTTTTTIII....OOOOOOOOOOOOO....ONNNNN....NNNNN..
+//......AAAAAAA......NNNNNNN....NNNN..IIIII..MMMMMMM....MMMMMMM......AAAAAAA...AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNN....NNNNN..
+//......AAAAAAAA.....NNNNNNN....NNNN..IIIII..MMMMMMMM...MMMMMMM......AAAAAAAA..AAATTTTTTTTTTTTTTTIII...OOOOOOOOOOOOOOO...ONNNNNN...NNNNN..
+//.....AAAAAAAAA.....NNNNNNNN...NNNN..IIIII..MMMMMMMM...MMMMMMM.....AAAAAAAAA.......TTTTT......TTIII..IOOOOOO...OOOOOOO..ONNNNNN...NNNNN..
+//.....AAAAAAAAAA....NNNNNNNN...NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOOO.....OOOOOO..ONNNNNNN..NNNNN..
+//.....AAAAAAAAAA....NNNNNNNNN..NNNN..IIIII..MMMMMMMM..MMMMMMMM.....AAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNN..NNNNN..
+//....AAAAAAAAAAA....NNNNNNNNNN.NNNN..IIIII..MMMMMMMM..MMMMMMMM....AAAAAAAAAAA......TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNN.NNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNN.NNNN..IIIII..MMMMMMMMM.MMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNNNNNNNNNNNNN..
+//....AAAAA.AAAAAA...NNNNNNNNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM....AAAAA.AAAAAA.....TTTTT......TTIII.IIOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAA..AAAAA...NNNNN.NNNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAA..AAAAA.....TTTTT......TTIII..IOOOO.......OOOOO..ONNN.NNNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO.......OOOOO..ONNN..NNNNNNNNN..
+//...AAAAAAAAAAAAAA..NNNNN..NNNNNNNN..IIIII..MMMMMMMMMMMMMMMMMM...AAAAAAAAAAAAAA....TTTTT......TTIII..IOOOO......OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAA..NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMMMMMMMM..AAAAAAAAAAAAAAA....TTTTT......TTIII..IOOOOO.....OOOOOO..ONNN...NNNNNNNN..
+//..AAAAAAAAAAAAAAAA.NNNNN...NNNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAAAAAAAAAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//..AAAAA.....AAAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM..AAAAA.....AAAAAA...TTTTT......TTIII...OOOOOOOOOOOOOOO...ONNN....NNNNNNN..
+//.AAAAAA......AAAAA.NNNNN....NNNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAAA......AAAAA...TTTTT......TTIII....OOOOOOOOOOOOO....ONNN.....NNNNNN..
+//.AAAAA.......AAAAAANNNNN.....NNNNN..IIIII..MMMMM.MMMMMM.MMMMM.MAAAA.......AAAAAA..TTTTT......TTIII.....OOOOOOOOOOO.....ONNN.....NNNNNN..
+//.........................................................................................................OOOOOOO........................
+//........................................................................................................................................*/
 
 @keyframes startup { /* Animation of PopUp moving upward */
 
@@ -25,6 +51,7 @@
         transform: translate(-50%, 100%);
     
     }
+    
     to {
         top: 50%;
         left: 50%;
