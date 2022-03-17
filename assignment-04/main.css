@@ -1,9 +1,0 @@
-
-#data-content-area { /* Data Content Data (Used to show date and season*/
-    display: none;
-}
-
-#warning { /* Warning Sign (for when no input is entered) */
-    display: none;
-    color: red;
-}

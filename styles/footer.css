@@ -1,9 +1,10 @@
 /* Footer */
 
 
-footer {
+footer { /* Styles for the Footer */
     position: relative;
     z-index: 1;
+    height: 720px;
     display: flex;
     padding: 1em;
     margin-left: -0.3vw;
@@ -22,47 +23,34 @@ footer .switch { /* Image switch on the left */
 
 }
 
-/* Footer */
+/* Navigation Bar (Located at Bottom Right */
 
-
-span.btn { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2em;
-    border-color: black;
-    border-style: solid;
-}
-
-.btn {
-    background: white;
+.navigation img { /* Styles for Button Images */
+    width: 4rem;
+    margin: 0.5% 0.25rem;
     position: relative;
-    height: 56px;
+    filter: drop-shadow(0px 0px 0px #222);
+    transition: 0.3s;
+    z-index: 0;
 }
 
-.btn input {
-    position: relative;
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    outline: none;
-    appearance: none;
-    font-family: 'Patrick Hand', cursive;
-    font-weight: bold;
+.navigation img:hover { /* Styles for Images when hovered */
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 1px #222);
+    z-index: 2;
 }
 
+#zodac_toggle { /* Toggle that shows the Zodiac Buttons on the bottom right navigation */
+    display: block;
+}
 
+#cereal_toggle { /* Toggle that shows the Cereal Buttons on the bottom right navigation */
+    display: none;
+}
 
 
 /* Switch */
 
-
-.container { 
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-}
 
 input[type=checkbox].toggle{ /* Hide Checkbox */
     display: none;
@@ -85,31 +73,30 @@ input[type=checkbox].toggle + label { /* Toggle Size and Border */
 
 }
 
-input[type=checkbox].toggle + label:before { 
+input[type=checkbox].toggle + label:before { /* Circle Shape for Zodiac */
     position: absolute;
     top: 4px;
     height: 44px;
     width: 44px;
     content: '';
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     z-index: 3;
 }
 
 
-input[type=checkbox].toggle + label:after { /* Cereal (Text) */
+input[type=checkbox].toggle + label:after { /* Circle Shape for Cereal */
     position: absolute;
     top: 25%;
     height: 44px;
     width: 44px;
     content: '';
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     z-index: 3;
 
 }
 
 
-
-input[type=checkbox].toggle:not(:checked) + label:after{ 
+input[type=checkbox].toggle:not(:checked) + label:after{ /* Cereal Text */
     content: attr(data-unchecked);
     right: 2rem;
     left: auto;
@@ -118,18 +105,13 @@ input[type=checkbox].toggle:not(:checked) + label:after{
 
 }
 
-input[type=checkbox].toggle:not(:checked) + label:before{
+input[type=checkbox].toggle:not(:checked) + label:before{ /* Toggle Circle Positioned to Left */
     left: 4px;
     background-color: black;
     border-radius: 3rem;
 }
 
 
-input[type=checkbox].toggle:checked + label{ /* Change Color Outline to Yellow */
-    text-align: left;
-    border-color: black;
-    border-radius: 3rem;
-}
 
 input[type=checkbox].toggle:checked + label:after{ /* Zodiac Text */
     content: attr(data-checked);
@@ -143,22 +125,4 @@ input[type=checkbox].toggle:checked + label:before{ /* Toggle Circle Positioned 
     left: 96px;
     background-color: black;
     border-radius: 3rem;
-}
-
-
-/* Navigation Bar */
-
-.navigation img {
-    width: 4rem;
-    margin: 0.5% 0.25rem;
-    position: relative;
-    filter: drop-shadow(0px 0px 0px #222);
-    transition: 0.3s;
-    z-index: 0;
-}
-
-.navigation img:hover {
-    transform: scale(1.5);
-    filter: drop-shadow(0px 0px 1px #222);
-    z-index: 2;
 }

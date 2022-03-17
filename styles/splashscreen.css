@@ -23,26 +23,45 @@
     margin: auto;
     width: 50%;
     text-align: center;
-
-
 }
 
 
 /* Input Screen */
 
-input[type="date"] {
+.input_form { /* Style for input_form div */
+    background-color: white;
+    margin: auto;
+    width: 30%;
+    border: 5px solid black;
+    border-radius: 2rem;
+    padding: 10px;  
+    
+}
+
+#js-warning-animation { /* Styles for Warning Animation that plays if no date is entered */
+    animation-duration: 1s;
+    text-align: center;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    
+}
+
+input[type="date"] { /* Styles for input element that require dates */
+    font-family: 'Patrick Hand', cursive; 
+    background-color: rgba(255, 255, 255, 0);
     position: relative;
     color: black;
     padding: 1rem;
     font-size: 1.5rem;
     border: none;
     outline: none;
-    border-radius: 1rem;
 }
 
-::-webkit-calendar-picker-indicator {
-    background-color: white;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator { /* Removes Calendar Icon from Google Chrome */
+    display: none;
+    -webkit-appearance: none;
 }
+
+

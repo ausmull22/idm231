@@ -33,7 +33,6 @@
 }
 
 
-
 .zodiac_description h2 { /* Style for Zodiac Description Heading */
     font-style: italic;
 }
@@ -51,15 +50,15 @@
 
 #image_box { /* Style for Image Box */
     max-width: 120px;
+    height: 120px;
     margin: 0 auto;
     animation: aries 5s linear infinite;
 }
 
-#image_box img {
+#image_box img { /* Style for Image within Box /*
     width: 100%;
     opacity: 0;
 }
-
 
 
 .button { /* Button */
@@ -128,7 +127,7 @@
 
     to {
     
-        transform: translate(0%, 100%); /* Reaches final position */
+        transform: translate(0%, 120%); /* Reaches final position */
     
     }
     

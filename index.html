@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakfast Cereal Zodiac Interactive</title>
+    <title> Cereal Zodiac Interactive</title>
     <script src="scripts/variables.js"></script>
+    <script src="scripts/switch.js"></script>
     <script src="scripts/popup.js"></script>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/bd54883f61.js" crossorigin="anonymous"></script>
@@ -15,70 +16,73 @@
     <link rel="stylesheet" href="styles/zodiac_description.css">
     <link rel="stylesheet" href="styles/splashscreen.css">
     <link rel="stylesheet" href="styles/footer.css">
-
-
 </head>
 <body>
 
- 
-    <!-- Title of Program and Input Field-->
-
+    <!-- All Content that will be loaded-->
     <div class = "content">
-
+        <!-- Pop-Up Container -->
         <div id="popup"> 
+            <!-- Heading of Title -->
             <h1>Cereal Zodiac</h1>
-            <p>
-                Enter your birthday in the input box, and click enter. After clicking the enter button, you will be given a cereal brand based on your zodiac. You can also select zodiacs at the bottom right of the screen.
-            </p>
-            <input class="button" type="submit" value="Enter" onclick="popup_exit()">
+            <!-- Paragraph that Instructions on how to use program -->
+            <p> Enter your birthday in the input box, and click enter. After clicking the enter button, you will be given a cereal brand based on your zodiac. You can also select zodiacs at the bottom right of the screen.</p> 
+            <!-- Button to disable Pop-up -->
+            <input class="button" type="submit" value="Enter" onclick="popup_exit()"> 
         </div>
         
+        <!-- Splashscreen -->
 
         <div class = splashscreen>
-
-            <div class = cereal_view>
-                <img id = "js-cereal-view" src="images/cereal_viewer/default.png" alt="placeholder text">
+            
+            <!-- Container Displaying the Cereal On-Screen -->
+            <div class = cereal_view> 
+                <img id = "js-cereal-view" src="images/cereal_viewer/default.png" alt="Image of Cereal"> 
             </div>
 
             <div class = input_screen>
+                <!-- Heading of Title -->
                 <h1>Cereal Zodiacs</h1>
-                <div class="input_form">                
-                    <label for="date"
-                    class="form__label">Birth Date</label>
-                    <input type="date" id="input" placeholder="Birth Date"
-                    class="form__input" autocomplete="off">
+                <!-- Heading asking for User to Enter Birthday -->
+                <h3>Enter your birthday:</h3>
+                <!-- Container with Form -->
+                <div id="js-warning-animation" class="input_form">
+                    <!-- Form Asking for Birthday-->
+                    <form> 
+                        <!-- Font Awesome Icon to Represent Birthday -->
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <!-- Input for Birthdate -->
+                        <input type="date" id="input" class="form__input" autocomplete="off"> 
+                    </form>
                 </div>
-                    
-
-
-                <input class="button" type="submit" value="Enter" onclick="enter()">
+                
+                <!-- Enter Button to Determine Zodiac -->
+                <input class="button" type="submit" value="Enter" onclick="convert_date()"> 
+                <!-- Enter Button for Help -->
                 <button class="button" onclick="popup_activate()"><i class="fa-solid fa-book"></i></button>
 
             </div>
         
-            <div class = zodiac_description>
+            <!-- Container for Zodiac Description -->
+            <div class = zodiac_description> 
                 <div class ="zodiac_wrapper">
-
                     <div class="image_wrapper">
                         <div id="image_box">
-                            <img id="js-slideshow" src="images/symbols/brand/honeynutcheerios.png" alt="">
+
                         </div>
                     </div>
-
-                    <h2 id="js-cereal-title">Honey Nut Cheerios</h2>
-
-                    <h4 id="js-zodiac-title">Sagittarius</h4>
                     
-                    <p id="js-written-description">
-                    </p>
-
-
+                    <!-- Heading for Selected Cereal Brand -->
+                    <h2 id="js-cereal-title"></h2>  
+                    <!-- Heading for Selected Zodiac -->
+                    <h4 id="js-zodiac-title"></h4> 
+                    <!-- Paragraph for Zodiac Description -->
+                    <p id="js-written-description"></p> 
 
                 </div>
                 
+                <!-- Button to Return to Input Screen -->
                 <input class="button" id="up" type="submit" value="Return" onclick="zodiac_exit()">
-
-
 
             </div>
 
@@ -87,11 +91,11 @@
 
         <!-- Footer-->
         <footer>
-            <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
 
+            <!-- Toggle Switch (Switch Buttons from Zodiacs to Cereal Brands)-->
             <div class = switch>
-                <div onclick="image_switch()">
-                    <input type="checkbox" class="toggle" id="default">
+                <div>
+                    <input type="checkbox" class="toggle" id="default" onclick="image_switch()">
                     <label for="default" data-checked="Zodiac" data-unchecked="Cereal">
                     </label>
                 </div>
@@ -99,32 +103,50 @@
             </div>
 
             <!-- Navigation to view Zodiacs without having to input birthdate-->
-            <div class = navigation>
-                <img src="images/symbols/zodiac/aries.png" id="aries" alt="aries" onclick="zodiac_aries();">
-                <img src="images/symbols/zodiac/taurus.png" id="taurus" alt="taurus" onclick="zodiac_taurus();zodiac_transition();">
-                <img src="images/symbols/zodiac/gemini.png" id="gemini" alt="gemini" onclick="zodiac_gemini();zodiac_transition();">
-                <img src="images/symbols/zodiac/cancer.png" id="cancer" alt="cancer" onclick="zodiac_cancer();zodiac_transition();">
-                <img src="images/symbols/zodiac/leo.png" id="leo" alt="leo" onclick="zodiac_leo();zodiac_transition();">
-                <img src="images/symbols/zodiac/virgo.png" id="virgo" alt="virgo" onclick="zodiac_virgo();zodiac_transition();">
-                <img src="images/symbols/zodiac/libra.png" id="libra" alt="libra" onclick="zodiac_libra();zodiac_transition();">
-                <img src="images/symbols/zodiac/scorpio.png" id="scorpio" alt="scorpio" onclick="zodiac_scorpio();zodiac_transition();">
-                <img src="images/symbols/zodiac/sagittarius.png" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus();zodiac_transition();">
-                <img src="images/symbols/zodiac/capricorn.png" id="capricorn" alt="capricorn" onclick="zodiac_capricorn();zodiac_transition();">
-                <img src="images/symbols/zodiac/aquarius.png" id="aquarius" alt="aquarius" onclick="zodiac_aquarius();zodiac_transition()">
-                <img src="images/symbols/zodiac/pisces.png" id="pisces" alt="pisces" onclick="zodiac_pisces();zodiac_transition();">
+            <div class ="navigation">
+                <div id="zodiac_toggle">
+                    <!-- Images of Horoscopes Acting as Buttons -->
+                    <img src="images/symbols/zodiac/aries.png" class="js-cereal" id="aries" alt="aries" onclick="zodiac_aries();zodiac_transition();">
+                    <img src="images/symbols/zodiac/taurus.png" class="js-cereal" id="taurus" alt="taurus" onclick="zodiac_taurus();zodiac_transition();">
+                    <img src="images/symbols/zodiac/gemini.png" class="js-cereal" id="gemini" alt="gemini" onclick="zodiac_gemini();zodiac_transition();">
+                    <img src="images/symbols/zodiac/cancer.png" class="js-cereal" id="cancer" alt="cancer" onclick="zodiac_cancer();zodiac_transition();">
+                    <img src="images/symbols/zodiac/leo.png" class="js-cereal" id="leo" alt="leo" onclick="zodiac_leo();zodiac_transition();">
+                    <img src="images/symbols/zodiac/virgo.png" class="js-cereal" id="virgo" alt="virgo" onclick="zodiac_virgo();zodiac_transition();">
+                    <img src="images/symbols/zodiac/libra.png" class="js-cereal" id="libra" alt="libra" onclick="zodiac_libra();zodiac_transition();">
+                    <img src="images/symbols/zodiac/scorpio.png" class="js-cereal" id="scorpio" alt="scorpio" onclick="zodiac_scorpio();zodiac_transition();">
+                    <img src="images/symbols/zodiac/sagittarius.png" class="js-cereal" id="sagittarius" alt="sagittarius" onclick="zodiac_saggitarus();zodiac_transition();">
+                    <img src="images/symbols/zodiac/capricorn.png" class="js-cereal" id="capricorn" alt="capricorn" onclick="zodiac_capricorn();zodiac_transition();">
+                    <img src="images/symbols/zodiac/aquarius.png" class="js-cereal" id="aquarius" alt="aquarius" onclick="zodiac_aquarius();zodiac_transition()">
+                    <img src="images/symbols/zodiac/pisces.png" class="js-cereal" id="pisces" alt="pisces" onclick="zodiac_pisces();zodiac_transition();">
+                </div>
+                <div id="cereal_toggle">
+                    <!-- Images of Cereal Brands Acting as Buttons -->
+                    <img src="images/symbols/brand/luckycharms.png" class="js-cereal" alt="Lucky Charms" onclick="zodiac_aries();zodiac_transition();">
+                    <img src="images/symbols/brand/trix.png" class="js-cereal" alt="Trix" onclick="zodiac_taurus();zodiac_transition();">
+                    <img src="images/symbols/brand/raisinbran.png" class="js-cereal" alt="Raisin Bran" onclick="zodiac_gemini();zodiac_transition();">
+                    <img src="images/symbols/brand/frostedflake.png" class="js-cereal" alt="Frosted Flakes" onclick="zodiac_cancer();zodiac_transition();">
+                    <img src="images/symbols/brand/life.png" class="js-cereal" alt="Life" onclick="zodiac_leo();zodiac_transition();">
+                    <img src="images/symbols/brand/alphabits.png" class="js-cereal" alt="Alpha Bits" onclick="zodiac_virgo();zodiac_transition();">
+                    <img src="images/symbols/brand/applejacks.png" class="js-cereal" alt="Apple Jacks" onclick="zodiac_libra();zodiac_transition();">
+                    <img src="images/symbols/brand/cornflakes.png" class="js-cereal" alt="Corn Flakes" onclick="zodiac_scorpio();zodiac_transition();">
+                    <img src="images/symbols/brand/honeynutcheerios.png" class="js-cereal" alt="Honey Nut Cheerios" onclick="zodiac_saggitarus();zodiac_transition();">
+                    <img src="images/symbols/brand/goldengrahams.png" class="js-cereal" alt="Golden Grahams" onclick="zodiac_capricorn();zodiac_transition();">
+                    <img src="images/symbols/brand/wheaties.png" class="js-cereal" alt="Wheaties" onclick="zodiac_aquarius();zodiac_transition()">
+                    <img src="images/symbols/brand/reeses.png" class="js-cereal" alt="Reeses" onclick="zodiac_pisces();zodiac_transition();">
+                </div>
             </div>
         </footer>
     </div>
 
+    <!-- Loading Screen-->
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
 
-    <script>
+    <script> // Script for Loading Screen 
         $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
         });
-    </script>
-
+    </script> 
 </body>
 </html>
